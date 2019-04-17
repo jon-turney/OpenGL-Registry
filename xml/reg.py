@@ -27,7 +27,7 @@ def write(*args, **kwargs):
 # Used in converting lxml Elements into text.
 #   str - string to convert
 def noneStr(str):
-    if (str):
+    if (str is not None):
         return str
     else:
         return ""
